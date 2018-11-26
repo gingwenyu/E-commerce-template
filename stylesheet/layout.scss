@@ -1,0 +1,32 @@
+
+// Required
+@import "../scss/functions.scss";
+@import "helper/variables";
+@import "../scss/mixins";
+
+// Optional
+@import "../scss/reboot";
+@import "../scss/grid";
+@import "../scss/navbar";
+@import "../scss/utilities";
+
+
+ nav{     
+   max-width:1024px;
+   height: auto;
+   .header{
+     max-width:940px;
+     height: auto;
+   }
+ }
+ footer .container .row{
+ //  max-width:940px;
+   height: auto;
+ }
+
+ 
+
+
+
+
+
