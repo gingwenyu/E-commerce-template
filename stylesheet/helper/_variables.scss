@@ -91,7 +91,8 @@ $theme-colors: map-merge(
     "bright":     #FFE180, 
     "dark":       #8DA291,
     "dark2":      #3F5D45,
-
+    "brightopa":  rgba(255, 225, 128, 0.8), 
+    "dark2opa":   rgba(63, 93, 69, 0.8),
   ),
   $theme-colors
 );
@@ -154,6 +155,12 @@ $spacers: map-merge(
     10: ($spacer * 10),
     11: ($spacer * 11),
     12: ($spacer * 12),
+    14: ($spacer * 14.7),
+    16: ($spacer * 16),
+    21: ($spacer * -21),
+    22: ($spacer * 22),
+    28: ($spacer * 28),
+
     
   ),
   $spacers
@@ -186,7 +193,7 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                theme-color("primary") !default;
+$link-color:                theme-color("dark2") !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     underline !default;
@@ -271,7 +278,7 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
@@ -279,9 +286,6 @@ $font-family-base:            $font-family-sans-serif !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
-$font-size-4:                 16px;
-$font-size-5:                 20px;
-$font-size-6:                 24px;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
@@ -292,12 +296,13 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2.5 !default;   //40px  
+$h0-font-size:                $font-size-base * 2.25 !default;  //36px
+$h2-font-size:                $font-size-base * 2 !default;     //32px
+$h3-font-size:                $font-size-base * 1.75 !default;  //28px
+$h4-font-size:                $font-size-base * 1.5 !default;   //24px
+$h5-font-size:                $font-size-base * 1.25 !default;  //20px
+$h6-font-size:                $font-size-base !default;  //16px
 
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
@@ -741,15 +746,15 @@ $pagination-padding-y-lg:           .75rem !default;
 $pagination-padding-x-lg:           1.5rem !default;
 $pagination-line-height:            1.25 !default;
 
-$pagination-color:                  $link-color !default;
+$pagination-color:                  #3F5D45;//$link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           #EAF0ED;//$gray-300 !default;
 
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            $link-hover-color !default;
+$pagination-hover-color:            #3F5D45;//$link-hover-color !default;
 $pagination-hover-bg:               $gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 
