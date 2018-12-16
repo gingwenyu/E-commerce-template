@@ -10,23 +10,15 @@
 @import "../scss/navbar";
 @import "../scss/utilities";
 
+.bg-cover{  
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
 
- nav{     
-   max-width:1024px;
-   height: auto;
-   .header{
-     max-width:940px;
-     height: auto;
-   }
- }
- footer .container .row{
- //  max-width:940px;
-   height: auto;
- }
-
- 
-
-
-
-
-
+.write-v{
+  writing-mode: vertical-rl;  
+}
+.write-h{
+  writing-mode: horizontal-tb;  
+}

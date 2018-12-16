@@ -1,21 +1,6 @@
 
-// Required
-@import "../scss/functions.scss";
-@import "helper/variables";
-@import "../scss/mixins";
-
-// Optional
-@import "../scss/reboot";
-@import "../scss/grid";
-@import "../scss/navbar";
-@import "../scss/utilities";
 @import "layout.scss";
 
-.bg-cover{  
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-}
 .headimg{
   position: absolute;
   top: 40px;
