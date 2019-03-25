@@ -6997,21 +6997,10 @@ a.text-dark2opa:hover, a.text-dark2opa:focus {
   -ms-writing-mode: lr-tb;
   writing-mode: horizontal-tb; }
 
-.headimg {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  z-index: 2; }
+.btn-next {
+  font-size: 24px; }
 
-.tag {
-  width: 36px;
-  height: 106.73px;
-  position: absolute;
-  top: 0px;
-  left: 20px;
-  z-index: 2; }
-  .tag p {
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    letter-spacing: 3px; }
+.placeholderCus {
+  color: #8DA291;
+  background-color: #EAF0ED;
+  font-size: 16px; }
