@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>checkout-3</title>
+  <link rel="stylesheet" href="css/bootstrap.css"> <!---->
+  <link rel="stylesheet" href="stylesheet/checkout.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="">
+    <div class="container" style="max-width:780px;">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="card rounded-0">            
+            <div class="card-body text-light bg-dark2 p-6">
+              <div class="d-flex">
+                <p class="h2 pb-6">發票</p>
+                <img class="ml-auto mt-2" src="image/progress3.png" style="width:190px;height:20px;">
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" id="electbtn" class="btn btn-outline-light2 rounded-0 px-10 py-3 active" >電子發票</button>
+                <button type="button" id="postbtn" class="btn btn-outline-light2 rounded-0 px-10 py-3">郵寄發票</button>                
+              </div>
+              <form> 
+                <div id="electForm">
+                  <div class="form-group" id="emailbox">
+                    <label for="" class="mt-6">電子郵件信箱</label>
+                    <input type="email" class="form-control rounded-0 placeholderCus p-5" id="" placeholder="example@email.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="">統一編號（選填）</label>
+                    <input type="number" class="form-control rounded-0 placeholderCus p-5" id="" placeholder="12345678">
+                  </div>
+                </div>
+                
+                <div id="postForm">                    
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity" class="mt-6">地址</label>
+                        <input type="text" class="form-control rounded-0 placeholderCus p-5" id="inputCity" placeholder="高雄市">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="" class="mt-6">
+                          <input type="checkbox" name="" value="" class="h6"><small>同運送地址</small>
+                        </label>
+                        <input type="text" class="form-control rounded-0 placeholderCus p-5" id="" placeholder="新興區">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control rounded-0 placeholderCus p-5" id="" placeholder="光明路 520 號">
+                    </div>                    
+                    
+                    <div class="form-group">
+                      <label for="">統一編號（選填）</label>
+                      <input type="number" class="form-control rounded-0 placeholderCus p-5" id="" placeholder="12345678">
+                    </div>
+
+                </div>
+              
+
+              </form>
+            </div>
+            <button class="btn btn-bright btn-next h4 text-dark2 rounded-0 border-0 p-3" href="./success.html">
+              <strong>下一步</strong>
+            </button> 
+          </div>
+        </div>
+        <div class="col-md-5 d-md-block d-none">          
+            <div class="card rounded-0 bg-light text-dark">
+              <p class="h4 py-3 text-center bg-light2">訂單摘要</p>
+              <div class="card-body py-3 px-4">
+                <p class="h6 pt-2 d-flex">小計<span class="ml-auto">NT$ 2,700</span></p>
+                <p class="h6 pt-2 d-flex">運費<span class="ml-auto">NT$ 300</span></p>
+                <p class="h5 py-3 d-flex font-weight-bold">總計<span class="ml-auto">NT$ 3,000</span></p>
+              </div>             
+            </div>
+
+            <div class="card rounded-0 bg-light text-dark">
+              <p class="h4 py-3 text-center bg-light2">購物清單</p>
+              <div class="card-body pt-3 pb-0 px-4 d-flex">
+                <div class="bg-cover" style="background-image:url(https://bit.ly/2QiWeQW);width:120px;height:80px;"></div>
+                <div class="pl-3">
+                  <p class="h6 m-0">焦糖馬卡龍（2）</p>
+                  <p class="h5"><strong>NT$ 900</strong></p>
+                </div>
+              </div>
+
+              <div class="card-body pt-3 pb-0 px-4 d-flex">
+                <div class="bg-cover" style="background-image:url(https://bit.ly/2OUteif);width:120px;height:80px;"></div>
+                <div class="pl-3">
+                  <p class="h6 m-0">焦糖馬卡龍（2）</p>
+                  <p class="h5"><strong>NT$ 900</strong></p>
+                </div>
+              </div>
+
+              <div class="card-body py-3 px-4 d-flex">
+                <div class="bg-cover" style="background-image:url(https://bit.ly/2zKOP7w);width:120px;height:80px;"></div>
+                <div class="pl-3">
+                  <p class="h6 m-0">焦糖馬卡龍（2）</p>
+                  <p class="h5"><strong>NT$ 900</strong></p> 
+                </div>
+              </div>
+            </div>
+          
+        </div>  
+      </div>
+    </div>
+  </div>
+
+<script>
+  $(document).ready(function () {  
+    $("#postForm").hide("1000");
+
+    $("#electbtn").click(function () { 
+      //$("#electbtn").addClass("active");
+      //.toggleClass  ?
+      //need to fix
+      $("#postForm").hide("1000");       
+      $("#electForm").show("1000");
+    });
+
+    $("#postbtn").click(function () {
+      $("#electbtn").removeClass("active");  
+      $("#postbtn").addClass("active"); 
+      $("#electForm").hide("1000");
+      $("#postForm").show("1000");
+    });
+    
+  });
+</script>  
+
+</body>
+
+</html>
