@@ -13,10 +13,46 @@
 </head>
 
 <body>
+  <!--header-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light mx-auto">
+    <div class="header container d-flex justify-content-between align-items-center flex-nowrap px-0">
+      <a class="navbar-brand py-6 d-flex order-2 order-md-1" href="#">
+        <!--order-2 order-md-1-->
+        <img class='d-none d-md-inline-block order-0 order-md-1' src="image/logo-all-dark.svg" style='width:219.49px;height:40px;'>
+        <img class='d-inline-block d-md-none order-2 order-md-0' src="image/logotype-sm-dark.svg" style='width:114.14px;height: 17.74px;'>
+      </a>
+      <button class="navbar-toggler d-flex d-md-none order-1 order-md-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!--order-1 order-md-0-->
+        <span class="navbar-toggler-icon order-1 order-md-0" style='width:24px;height:24px;'></span>
+      </button>
+  
+      <div class="collapse navbar-collapse d-none d-md-flex justify-content-md-end order-md-2" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active px-4">
+            <a class="nav-link text-dark2" href="./index.html">首頁</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link text-dark2" href="./product.html">甜點</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link text-dark2" href="./login.html">登入</a>
+          </li>
+        </ul>
+      </div>
+      <a class="nav-link d-flex align-items-center justify-content-end pl-10 pr-0 order-3" href="./cart.html">
+        <img src="image/shopping-cart.svg" class="" style='width:24px;height:24px;'>
+      </a>
+  
+    </div>
+  </nav>
+  <!--header end-->
+
+
   <div class="">
     <div class="container" style="max-width:940px;">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 mt-md-6 mt-0 mb-md-12 mb-0">
           <div class="card rounded-0 border-light2">
             <div class="card-header text-center h4 text-dark2 bg-light2">您的購物車</div>
             <div class="card-body d-flex align-items-center pl-0 py-6">
@@ -75,7 +111,7 @@
           </div>
 
         </div>
-        <div class="col-md-4 d-none d-md-block">  
+        <div class="col-md-4 d-none d-md-block mt-md-6 mt-0">  
           <div class="card rounded-0 text-light bg-dark2">
             <p class="h4 py-3 text-center">訂單摘要</p>    
             <hr>        
@@ -84,7 +120,8 @@
               <p class="h6 pt-2 d-flex">運費<span class="ml-auto">NT$ 300</span></p>
               <p class="h5 py-3 d-flex font-weight-bold">總計<span class="ml-auto">NT$ 3,000</span></p>
             </div>
-            <button class="btn btn-bright btn-check text-dark2 h4 rounded-0 border-0 py-3 m-0"><strong>結帳</strong></button>
+            <button class="btn btn-bright btn-check text-dark2 h4 rounded-0 border-0 py-3 m-0"
+              onclick="window.location.href='./checkout-1.html'"><strong>結帳</strong></button>
           </div>
 
         </div>
@@ -97,7 +134,8 @@
               <p class="h6 pt-2 d-flex">運費<span class="ml-auto">NT$ 300</span></p>
               <p class="h5 py-3 d-flex font-weight-bold">總計<span class="ml-auto">NT$ 3,000</span></p>
             </div>  
-            <button class="btn btn-bright btn-check text-dark2 h4 rounded-0 border-0 py-3 m-0" href="./checkout-1.html"> 
+            <button class="btn btn-bright btn-check text-dark2 h4 rounded-0 border-0 py-3 m-0" 
+              onclick="window.location.href='./checkout-1.html'">   
               <strong>結帳</strong>
             </button>
           </div>        
@@ -107,7 +145,58 @@
     </div>
   </div>
 
-
+  <!--footer-->
+  <section class="bg-dark2 mx-auto">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-5 align-items-center flex-nowrap d-flex flex-row justify-content-center justify-content-md-start">
+          <img class="my-7 mr-4" src="image/footer.logo.png" style='width:40px;height:40px;'>
+          <h4 class="text-light py-8 mb-0">訂閱你我的甜蜜郵件</h4>
+        </div>
+        <div class="col-md-5">
+          <form class="form-inline d-flex flex-nowrap justify-content-md-start justify-content-center">
+            <div class="form-group">
+              <label for="email" class="sr-only">email</label>
+              <!--<i class="far fa-envelope fa-2x" style="color:#3F5D45;"></i>-->
+              <input type="email" class="form-control bg-light2 my-md-6 mt-0 mb-4" id="email" placeholder="888@email.com"
+                style='width:316px;height:56px;border:0;'>
+              <!--<i class="far fa-envelope"></i>-->
+            </div>
+            <button class="btn btn-primary p-0 text-dark2 bg-bright my-md-6 mt-0 mb-4" style='width:64px;height:56px;border:0;'>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="bg-light2">
+      <div class="container row justify-content-center mx-auto">
+        <div class="col-md-5 justify-content-start">
+          <img class="mt-8" src="image/logotype-sm-dark.svg" style='width:171.22px;height: 26.6px;'>
+          <p class="text-dark2 pb-3 pt-md-11 mt-md-12 my-7">07-1234-5678<br>sweetaste@email.com<br>800 高雄市新興區幸福路 520 號</p>
+          <div class='d-flex align-items-end'>
+            <img class="mr-1 mb-2" src="image/ic-line@.svg" style='width:32px;height:32px;'>
+            <img class="mb-2" src="image/ic-facebook.svg" style='width:32px;height:32px;'>
+          </div>
+          <p class="text-dark2 d-inline-flex align-self-end d-md-none flex-nowrap my-0">© 2018 Sweetaste* All Rights
+            Reserved</p>
+        </div>
+        <div class="col-md-5 d-flex justify-content-end">
+          <div class='d-flex flex-column'>
+            <div class='d-flex flex-row-reverse'>
+              <img class="mt-6 mb-9 d-md-flex d-none" src="image/sm-今天是個吃甜點的好日子.svg" style='width:59.28px;height:218.69px;'>
+            </div>
+            <p class="text-dark2 align-self-end d-md-inline-flex d-none flex-nowrap mt-4">© 2018 Sweetaste* All Rights
+              Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--footer end-->
 
 </body>
 

@@ -11,6 +11,7 @@
         crossorigin="anonymous">
 </head>
 <body>
+    <!--header-->
     <nav class="navbar navbar-expand-md navbar-light bg-light mx-auto">
       <div class="header container d-flex justify-content-between align-items-center flex-nowrap px-0">        
         <a class="navbar-brand py-6 d-flex order-2 order-md-1" href="#"><!--order-2 order-md-1-->
@@ -36,12 +37,14 @@
             </ul>
         </div>
         <a class="nav-link d-flex align-items-center justify-content-end pl-10 pr-0 order-3" href="./cart.html">  
-            <img src="image/shopping-cart.svg" style='width:24px;height:24px;'>
+            <img src="image/shopping-cart.svg" class="" style='width:24px;height:24px;'>
         </a>       
                
       </div>
     </nav>    
+    <!--header end-->
 
+    <!--footer-->
     <section class="bg-dark2 mx-auto">
         <div class="container">
             <div class="row justify-content-center">
@@ -55,8 +58,11 @@
                             <label for="email" class="sr-only">email</label>
                             <!--<i class="far fa-envelope fa-2x" style="color:#3F5D45;"></i>-->
                             <input type="email" class="form-control bg-light2 my-md-6 mt-0 mb-4" id="email" placeholder="888@email.com" style='width:316px;height:56px;border:0;'>
-                        </div>
-                        <input type="button" value=">>" class="btn btn-primary p-0 text-dark2 bg-bright my-md-6 mt-0 mb-4" style='width:64px;height:56px;border:0;'>                                            
+                            <!--<i class="far fa-envelope"></i>-->
+                        </div>                        
+                        <button class="btn btn-primary p-0 text-dark2 bg-bright my-md-6 mt-0 mb-4" style='width:64px;height:56px;border:0;'>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>                                            
                     </form>
                 </div>
             </div>            
@@ -86,6 +92,7 @@
             </div>
         </div>
     </footer>
+    <!--footer end-->
 
     <script src="JS/ejs.js"></script>
     
