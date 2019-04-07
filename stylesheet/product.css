@@ -7015,3 +7015,10 @@ a.text-dark2opa:hover, a.text-dark2opa:focus {
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     letter-spacing: 3px; }
+
+.heart {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px; }

@@ -1,5 +1,6 @@
 
 @import "layout.scss";
+@import "product.scss";
 
 @include media-breakpoint-up(md) {
   .write-v-md{
@@ -24,17 +25,4 @@
 
 .head{
  // max-width:780px;
-}
-
-.tag{
-  width:36px;
-  height:106.73px;
-  position: absolute;
-  top:0px;
-  left: 20px;
-  z-index: 2;  
-  p{   
-    writing-mode: vertical-rl;  
-    letter-spacing: 3px;  
-  }
 }
