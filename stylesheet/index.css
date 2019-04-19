@@ -1,3 +1,6 @@
+.btn-h4 {
+  font-size: 24px; }
+
 *,
 *::before,
 *::after {
@@ -6996,6 +6999,9 @@ a.text-dark2opa:hover, a.text-dark2opa:focus {
   -webkit-writing-mode: horizontal-tb;
   -ms-writing-mode: lr-tb;
   writing-mode: horizontal-tb; }
+
+.btn-h4 {
+  font-size: 24px; }
 
 *,
 *::before,
