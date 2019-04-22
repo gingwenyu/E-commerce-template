@@ -1,5 +1,5 @@
 .btn-h4 {
-  font-size: 24px; }
+  font-size: 24px !important; }
 
 *,
 *::before,
@@ -1515,12 +1515,12 @@ template {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #007bff !important; }
+  background-color: #3F5D45 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #0062cc !important; }
+  background-color: #2a3f2e !important; }
 
 .bg-secondary {
   background-color: #6c757d !important; }
@@ -1655,7 +1655,7 @@ button.bg-dark2opa:focus {
   border-left: 0 !important; }
 
 .border-primary {
-  border-color: #007bff !important; }
+  border-color: #3F5D45 !important; }
 
 .border-secondary {
   border-color: #6c757d !important; }
@@ -6877,10 +6877,10 @@ button.bg-dark2opa:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #007bff !important; }
+  color: #3F5D45 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #0062cc !important; }
+  color: #2a3f2e !important; }
 
 .text-secondary {
   color: #6c757d !important; }
@@ -7001,7 +7001,7 @@ a.text-dark2opa:hover, a.text-dark2opa:focus {
   writing-mode: horizontal-tb; }
 
 .btn-h4 {
-  font-size: 24px; }
+  font-size: 24px !important; }
 
 *,
 *::before,
@@ -8517,12 +8517,12 @@ template {
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #007bff !important; }
+  background-color: #3F5D45 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #0062cc !important; }
+  background-color: #2a3f2e !important; }
 
 .bg-secondary {
   background-color: #6c757d !important; }
@@ -8657,7 +8657,7 @@ button.bg-dark2opa:focus {
   border-left: 0 !important; }
 
 .border-primary {
-  border-color: #007bff !important; }
+  border-color: #3F5D45 !important; }
 
 .border-secondary {
   border-color: #6c757d !important; }
@@ -13879,10 +13879,10 @@ button.bg-dark2opa:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #007bff !important; }
+  color: #3F5D45 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #0062cc !important; }
+  color: #2a3f2e !important; }
 
 .text-secondary {
   color: #6c757d !important; }

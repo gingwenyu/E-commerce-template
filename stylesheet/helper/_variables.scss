@@ -69,7 +69,7 @@ $colors: map-merge(
 
 $dark2:         #3F5D45;
 
-$primary:       $blue !default;
+//$primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -82,7 +82,7 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(  
   (
-    "primary":    $primary,   //#3F5D45, 
+    "primary":    #3F5D45,//$primary, 
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
@@ -94,7 +94,7 @@ $theme-colors: map-merge(
     "dark":       #8DA291,   //#aa3c16 
     "dark2":      #3F5D45,   //#44120c
     "brightopa":  rgba(255, 225, 128, 0.8), 
-    "dark2opa":   rgba(63, 93, 69, 0.8),
+    "dark2opa":   rgba(63, 93, 69, 0.8), 
   ),
   $theme-colors
 );
@@ -195,7 +195,7 @@ $body-color:                $gray-900 !default;
                             
 $link-color:                theme-color("primary") !default;
 $link-decoration:           none !default;
-$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-color:          darken($link-color, 15%) !default;   
 $link-hover-decoration:     underline !default;
 
 
@@ -301,8 +301,8 @@ $h0-font-size:                $font-size-base * 2.25 !default;  //36px
 $h2-font-size:                $font-size-base * 2 !default;     //32px
 $h3-font-size:                $font-size-base * 1.75 !default;  //28px
 $h4-font-size:                $font-size-base * 1.5 !default;   //24px
-.btn-h4{
-  font-size:24px;     
+.btn-h4{  
+  font-size:24px !important ;    
 }
 $h5-font-size:                $font-size-base * 1.25 !default;  //20px
 $h6-font-size:                $font-size-base !default;  //16px
@@ -387,7 +387,7 @@ $table-caption-color:         $text-muted !default;
 
 $input-btn-padding-y:         .375rem !default;
 $input-btn-padding-x:         .75rem !default;
-$input-btn-font-size:         $font-size-base !default;
+$input-btn-font-size:         $font-size-base* 1.5 !default;  //* 1.5
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       .2rem !default;
