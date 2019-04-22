@@ -1,3 +1,8 @@
+
+.write-v-md{
+    writing-mode: vertical-rl;  
+}
+
 *,
 *::before,
 *::after {

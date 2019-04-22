@@ -2,7 +2,7 @@
 @import "layout.scss";
 @import "product.scss";
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(md) {  
   .write-v-md{
     writing-mode: vertical-rl;  
   }

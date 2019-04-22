@@ -87,14 +87,14 @@ $theme-colors: map-merge(
     "success":    $success,
     "info":       $info,
     "warning":    $warning,
-    "danger":     $danger,
+    "danger":     $danger,   
     "light":      #FFFFFF,
-    "light2":     #EAF0ED,   //#e6cc8f
-    "bright":     #FFE180,   //#EDAA53
-    "dark":       #8DA291,   //#aa3c16 
-    "dark2":      #3F5D45,   //#44120c
-    "brightopa":  rgba(255, 225, 128, 0.8), 
-    "dark2opa":   rgba(63, 93, 69, 0.8),
+    "light2":     #e6cc8f,//#EAF0ED,   //#e6cc8f,           
+    "bright":     #EDAA53,//#FFE180,   //#EDAA53,      
+    "dark":       #aa3c16,//#8DA291,   //#aa3c16,    
+    "dark2":      #44120c,//#3F5D45,   //#44120c,     
+    "brightopa":  rgba(230, 204, 143,0.8),//rgba(255, 225, 128, 0.8),       
+    "dark2opa":   rgba(68, 18, 12,0.8),//rgba(63, 93, 69, 0.8),
   ),
   $theme-colors
 );

@@ -1,6 +1,10 @@
 
 @import "layout.scss";
 
+.write-v-md{
+    writing-mode: vertical-rl;  
+}
+
 .headimg{
   position: absolute;
   top: 40px;
