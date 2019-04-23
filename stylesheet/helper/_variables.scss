@@ -82,14 +82,14 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(  
   (
-    "primary":    $primary,   //#3F5D45, 
+    "primary":    #44120c,//$primary,   //#3F5D45,   
     "secondary":  $secondary,
     "success":    $success,
     "info":       $info,
     "warning":    $warning,
     "danger":     $danger,   
-    "light":      #FFFFFF,
-    "light2":     #e6cc8f,//#EAF0ED,   //#e6cc8f,           
+    "light":      #FFFFFF,  
+    "light2":     #e6cc8f,//#EAF0ED,   //#e6cc8f,             
     "bright":     #EDAA53,//#FFE180,   //#EDAA53,      
     "dark":       #aa3c16,//#8DA291,   //#aa3c16,    
     "dark2":      #44120c,//#3F5D45,   //#44120c,     
